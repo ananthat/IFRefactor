@@ -4,13 +4,15 @@ using AcemStudios.ApiRefactor.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AcemStudios.Migrations
 {
-    [DbContext(typeof(Cont))]
-    partial class StudioContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(StudioDBContext))]
+    [Migration("20200513185727_InitialDbCreation")]
+    partial class InitialDbCreation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

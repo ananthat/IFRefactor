@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace AcemStudios.ApiRefactor.DTOs
+namespace AcmeStudios.ApiRefactor.Data.DTOs
 {
     public class AddStudioItemDto
     {
